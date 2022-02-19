@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .hidden1 {
+        display: none;
+      }
+      .hidden2 {
+        display: none;
+      }
+      .hidden3 {
+        display: none;
+      }
+      .hidden4 {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    Team Number: <input type="text" id="myText" />
+
+    <button onclick="myFunction()">Go ahead</button>
+
+    <p id="demo"></p>
+    <p class="hidden1">
+      <a href="https://www.instagram.com" target="_blank">Process</a>
+    </p>
+
+    <p class="hidden2">
+      <a href="https://www.youtube.com/watch?v=DaZjY1Uv0KU" target="_blank"
+        >Process</a
+      >
+    </p>
+
+    <p class="hidden3">
+      <a
+        href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_text_value"
+        target="_blank"
+        >Process</a
+      >
+    </p>
+
+    <p class="hidden4">
+      <a href="https://www.programiz.com/dsa/selection-sort" target="_blank"
+        >Process</a
+      >
+      <script>
+        function myFunction() {
+          let x = document.getElementById('myText').value;
+
+          if (x == 1) {
+            const modal = document.querySelector('.hidden1');
+            modal.classList.remove('hidden1');
+          }
+
+          if (x == 2) {
+            const modal = document.querySelector('.hidden2');
+            modal.classList.remove('hidden2');
+          } else if (x == 3) {
+            const modal = document.querySelector('.hidden3');
+            modal.classList.remove('hidden3');
+          } else if (x == 4) {
+            const modal = document.querySelector('.hidden4');
+            modal.classList.remove('hidden4');
+          }
+        }
+      </script>
+    </p>
+  </body>
+</html>
